@@ -11,7 +11,7 @@ document.getElementById('downloadDataBtn').addEventListener('click', downloadDat
 
 //script for dashboard 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('/dashboards.json')
+    fetch('dashboards.json')
         .then(response => response.json())
         .then(data => {
             createDashboardButtons(data);
