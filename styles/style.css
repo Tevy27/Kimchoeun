@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
-    margin: 0;
+    padding: 10px;
+    margin: 30px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +14,7 @@ body {
 
 header {
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 header h1 {
     font-size: 48px;
@@ -28,12 +29,13 @@ nav ul {
     margin: 20px 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -52,3 +54,65 @@ footer {
     margin-top: 10%;
 
 }
+/* Download Btn */
+.downloadbtn {
+    float: right;
+    margin-bottom: 100px;
+
+}
+#downloadReportBtn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#downloadDataBtn {
+    background-color: rgb(21, 192, 46);
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* data dash */
+h3{
+    color: rgb(35, 125, 222);
+}
+.block-link {
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; /* Keeps the text color consistent with the rest of the page */
+    display: inline-block; /* Makes the link display as a block */
+    width: 25%;
+}
+
+.block {
+    /* Add your styling for the block here */
+    padding: 20px;
+    border: 0.5px solid #cfcfcf; /* Example border */
+    background-color: #f5f5f5; /* Example background color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.block:hover {
+    background-color: #e8e8e8; /* Slightly darker background on hover */
+}
+
+.dashboard-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px; 
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); /* Text color */
+    border: none;
+    border-radius: 4px; /* Rounds the corners */
+    cursor: pointer; /* Changes the mouse cursor to a pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1em;
+}
+
+/* .dashboard-button:hover {
+    background-color: #005ba1;
+} */
