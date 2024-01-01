@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tevy Tunsay">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-work</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/include.js"></script>
+    
+</head>
+<body>
+    <div include-html="include/header.html"></div>
+    
+    <section id="data">
+        <h2>Data Dashboard</h2>
+        <p>Select data topic</p>
+        
+        <!-- Container for dashboard selection buttons -->
+        <div id="dashboardButtons">
+            <!-- Buttons will be dynamically loaded here -->
+        </div>
+
+        <!-- Placeholder for the Power BI iframe -->
+        <iframe id="powerbiFrame" title="Power BI Dashboard" width="100%" height="800" frameborder="0" allowFullScreen="true"></iframe>
+        <aside class="downloadbtn">
+            <button id="downloadReportBtn">Download Report</button>
+            <button id="downloadDataBtn">Download Data</button>
+        </aside>
+    </section>
+
+    <!-- <section id="data">
+        <h2>Title</h2>
+        <p>Description</p>
+        <aside class="downloadbtn">
+            <button id="downloadReportBtn">Download Report</button>
+            <button id="downloadDataBtn">Download Data</button>
+        </aside>
+       
+    </section> -->
+    
+    
+
+
+    <script src="scripts/script.js"></script>
+<div include-html="include/footer.html"></div>
+</body>
+</html>
