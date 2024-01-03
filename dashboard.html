@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tevy Tunsay">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-work</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/include.js"></script>
+    
+    
+</head>
+<body>
+    <div include-html="include/header.html"></div>
+    <h3>Cambodia competetiveness</h3>
+    <br><br>
+    <!-- Placeholder for the Power BI iframe -->
+    <iframe id="powerbiFrame" title="Power BI Dashboard" width="100%" height="800" frameborder="0" allowFullScreen="true"></iframe>
+    
+    <script>
+// This code is for dashboard.html to load the selected Power BI dashboard
+document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get('url');
+    if (url) {
+        loadDashboard(decodeURIComponent(url));
+    } else {
+        console.error('No dashboard URL provided.');
+    }
+});
+
+function loadDashboard(url) {
+    const iframe = document.getElementById('powerbiFrame');
+    if (!iframe) {
+        console.error('Dashboard iframe not found.');
+        return;
+    }
+    iframe.src = url;
+}
+    </script>
+    
+<!-- <script src="scripts/script.js" defer></script> -->
+<div include-html="include/footer.html"></div>
+</body>
+</html>
